@@ -1,4 +1,4 @@
-name: Git de prueba
+name: GitAction de prueba
 
 on:
   push:
@@ -6,12 +6,8 @@ on:
 jobs: 
   mostrar_mensaje:
     runs-on: ubuntu-latest
+    steps:
     - name: Muestra mensaje
       run:
         echo "Hola"
   
-  trabajo2:
-  
-  
-  
-  trabajo3:
