@@ -7,7 +7,16 @@ jobs:
   mostrar_mensaje:
     runs-on: ubuntu-latest
     steps:
+    
     - name: Muestra mensaje
       run:
         echo "Hola"
+    
+    - name: Mostrrar fecha y hora de ejecución
+      run:
+        date
+    
+    - name: Mostrar la versión de java instalada
+      run:
+        java --version
   
