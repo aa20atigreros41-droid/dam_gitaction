@@ -1,0 +1,21 @@
+name: Ejecutar HolaMundo
+
+on:
+  push:
+    # branches: [ main ]
+jobs:
+  ejecutar_HolaMundo
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Descargamos repositorio
+      uses: actions/checkout@v5    
+      run:
+      
+    - name: Compilar
+      uses: javac -d out $(find src -name "HolaMundo.java")
+
+    - name: Ejecutar programa
+      run: java HolaMundo
+        
+    
