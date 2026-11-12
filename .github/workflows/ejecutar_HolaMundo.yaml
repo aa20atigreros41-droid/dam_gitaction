@@ -16,6 +16,6 @@ jobs:
       run: javac src/HolaMundo.java
 
     - name: Ejecutar programa
-      run: java src/HolaMundo
+      run: java -cp src HolaMundo
         
     
